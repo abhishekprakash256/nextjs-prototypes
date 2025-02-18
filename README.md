@@ -1,6 +1,7 @@
 # Next.js Prototypes
 
 A collection of Next.js prototypes for testing, experimenting, and building quick ideas for personal website project maily focused on front-end.
+TypeScript will be used for developring the frontend mostly.
 
 ## 🚀 Getting Started
 
