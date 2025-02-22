@@ -71,7 +71,7 @@ function NavBar() {
             <Nav.Link className="nav-link bold-links" href="/life">
               Life
             </Nav.Link>
-            <Nav.Link className="nav-link bold-links" href="#/contact">
+            <Nav.Link className="nav-link bold-links" href="/contact">
               Contact
             </Nav.Link>
           </Nav>
