@@ -17,7 +17,7 @@ const More: React.FC<MoreProps> = ({ more_link }) => {
 
   return (
     <Container>
-      <Row className='p-2'>
+      <Row className="">
         <Col className="text-center">
           <h1 className="animate bounce">
             <a 
