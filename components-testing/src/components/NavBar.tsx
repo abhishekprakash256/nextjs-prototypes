@@ -10,7 +10,7 @@ import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 
-function NavBar() {
+const NavBar: React.FC = () => {
   const [theme, setTheme] = useState('light'); // Default theme
   const [isThemeInitialized, setIsThemeInitialized] = useState(false); // Track if the theme is ready
 
