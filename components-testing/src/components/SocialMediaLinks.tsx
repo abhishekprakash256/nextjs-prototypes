@@ -20,16 +20,17 @@ const SocialMediaLinks: React.FC<MediaLinksProps> = ({
   gitlab_link,
   kaggle_link,
   medium_link,
+  
 }) => {
   return (
     <Container>
-      <Row className="rounded background-color-body mt-3 p-2">
+      <Row className="rounded background-color-body mt-3 p-3 text-center">
         <Col>
           {github_link && (
             <a href={github_link} target="_blank" rel="noopener noreferrer">
-              <i className="ml-2 mr-2">
+              <i className="m-3">
                 <img
-                  src="../static/images/icons/github.svg"
+                  src="github.svg"
                   className="leetcode-icon hover-effect-github"
                   width="33"
                   height="33"
@@ -41,9 +42,9 @@ const SocialMediaLinks: React.FC<MediaLinksProps> = ({
 
           {linkedin_link && (
             <a href={linkedin_link} target="_blank" rel="noopener noreferrer">
-              <i className="ml-2 mr-2">
+              <i className="m-3">
                 <img
-                  src="../static/images/icons/linkedin.svg"
+                  src="linkedin-color.svg"
                   className="leetcode-icon hover-effect-linkedin"
                   width="33"
                   height="33"
@@ -55,9 +56,9 @@ const SocialMediaLinks: React.FC<MediaLinksProps> = ({
 
           {twitter_link && (
             <a href={twitter_link} target="_blank" rel="noopener noreferrer">
-              <i className="ml-2 mr-2">
+              <i className="m-3">
                 <img
-                  src="../static/images/icons/twitter.svg"
+                  src="twitter.svg"
                   className="leetcode-icon hover-effect-twitter"
                   width="33"
                   height="33"
@@ -69,9 +70,9 @@ const SocialMediaLinks: React.FC<MediaLinksProps> = ({
 
           {leetcode_link && (
             <a href={leetcode_link} target="_blank" rel="noopener noreferrer">
-              <i className="ml-2 mr-2">
+              <i className="m-3">
                 <img
-                  src="../static/images/icons/leetcode.svg"
+                  src="leetcode-color.svg"
                   className="leetcode-icon hover-effect-leetcode"
                   width="33"
                   height="33"
@@ -83,9 +84,9 @@ const SocialMediaLinks: React.FC<MediaLinksProps> = ({
 
           {gitlab_link && (
             <a href={gitlab_link} target="_blank" rel="noopener noreferrer">
-              <i className="ml-2 mr-2">
+              <i className="m-3">
                 <img
-                  src="../static/images/icons/gitlab.svg"
+                  src="gitlab-color.svg"
                   className="leetcode-icon hover-effect-gitlab"
                   width="33"
                   height="33"
@@ -97,9 +98,9 @@ const SocialMediaLinks: React.FC<MediaLinksProps> = ({
 
           {kaggle_link && (
             <a href={kaggle_link} target="_blank" rel="noopener noreferrer">
-              <i className="ml-2 mr-2">
+              <i className="m-3">
                 <img
-                  src="../static/images/icons/kaggle.svg"
+                  src="kaggle-color.svg"
                   className="leetcode-icon hover-effect-kaggle"
                   width="33"
                   height="33"
@@ -111,9 +112,9 @@ const SocialMediaLinks: React.FC<MediaLinksProps> = ({
 
           {medium_link && (
             <a href={medium_link} target="_blank" rel="noopener noreferrer">
-              <i className="ml-2 mr-2">
+              <i className="m-3">
                 <img
-                  src="../static/images/icons/medium.svg"
+                  src="medium.svg"
                   className="leetcode-icon hover-effect-medium"
                   width="33"
                   height="33"

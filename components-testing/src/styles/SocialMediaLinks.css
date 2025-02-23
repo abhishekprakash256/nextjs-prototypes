@@ -1,0 +1,48 @@
+
+:root {
+    
+    --github-icon: url(github-color.svg);
+    --linekdin-icon : url(linkedin-color.svg);
+    --leetcode-icon : url(leetcode-color.svg);
+    --gitlab-icon : url(gitlab-color.svg);
+    --kaggle-icon : url(kaggle-color.svg);
+    --linekdin-icon : url(linkedin-color.svg);
+
+}
+
+[data-theme="dark"]  {
+
+    --github-icon: url(github-color.svg);
+    --linekdin-icon : url(linkedin-color.svg);
+    --leetcode-icon : url(leetcode-color.svg);
+    --gitlab-icon : url(gitlab-color.svg);
+    --kaggle-icon : url(kaggle-color.svg);
+    --linekdin-icon : url(linkedin-color.svg);
+
+}
+
+
+
+.hover-effect-leetcode:hover {
+    content: url(leetcode-color.svg); /* Change the image source on hover */
+  }
+  
+  .hover-effect-kaggle:hover {
+    content: url(kaggle-color.svg); /* Change the image source on hover */
+  }
+  
+  .hover-effect-github:hover {
+    content: url(github.svg); /* Change the image source on hover */
+  }
+  
+  .hover-effect-linkedin:hover {
+    content: url(linkedin-color.svg); /* Change the image source on hover */
+  }
+  
+  .hover-effect-gitlab:hover {
+    content: url(gitlab-color.svg); /* Change the image source on hover */
+  }
+  
+  .social-media{
+    height: 40px;
+  }
