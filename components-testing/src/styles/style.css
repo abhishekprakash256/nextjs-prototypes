@@ -50,6 +50,8 @@
     --form-input-color: var(--primary-dark-color);
 
     --blue-text-hover: var(--light-blue);
+
+    --social-media-color: var(--primary-light-color);
  
   
   
@@ -103,5 +105,7 @@
     --md-code-color: var(--primary-light-color);
 
     --form-input-color: var(--primary-light-color);
+
+    --social-media-color: var(--primary-light-color);
   
   }

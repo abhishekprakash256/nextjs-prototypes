@@ -1,26 +1,4 @@
 
-:root {
-    
-    --github-icon: url(github-color.svg);
-    --linekdin-icon : url(linkedin-color.svg);
-    --leetcode-icon : url(leetcode-color.svg);
-    --gitlab-icon : url(gitlab-color.svg);
-    --kaggle-icon : url(kaggle-color.svg);
-    --linekdin-icon : url(linkedin-color.svg);
-
-}
-
-[data-theme="dark"]  {
-
-    --github-icon: url(github-color.svg);
-    --linekdin-icon : url(linkedin-color.svg);
-    --leetcode-icon : url(leetcode-color.svg);
-    --gitlab-icon : url(gitlab-color.svg);
-    --kaggle-icon : url(kaggle-color.svg);
-    --linekdin-icon : url(linkedin-color.svg);
-
-}
-
 
 
 .hover-effect-leetcode:hover {
@@ -46,3 +24,15 @@
   .social-media{
     height: 40px;
   }
+
+
+
+.leetcode-icon
+{
+ padding: 1px;
+  border: 2px solid var(--text-color);
+ border-radius: 15%;
+  margin-top: 0;
+  background-color:  var(--social-media-color);
+}
+
