@@ -55,8 +55,9 @@ function App() {
       <More more_link={ more_link}/>
      <HeadingBar title={title}/>
      <CardBundle></CardBundle>
-     <HeadingBar title={"MarkDown Block"}/> 
+     <HeadingBar title={"Chat App"}/> 
      <ArticleImage image_link= {article_image} />
+     <HeadingBar title={"MarkDown Block"}/> 
       <MarkDown mark_down_data={mark_down_data}/>
       <More more_link={ more_link}/>
  
