@@ -1,4 +1,4 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import "../styles/style.css"; // Custom CSS
 import "../styles/HeadingBar.css"; // Custom CSS
 
