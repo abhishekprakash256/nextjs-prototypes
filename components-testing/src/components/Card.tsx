@@ -18,7 +18,7 @@ const CardTemp: React.FC<CardTempProps> = ({ card_para, img_src, card_url, card_
         <div className="font-color-class text-center card-title">
           <Card.Title>{card_title}</Card.Title>
         </div>
-        <Card.Text className="card-text font-color-class ">
+        <Card.Text className="card-text font-color-class justify-content">
           {card_para}
         </Card.Text>
         <div className="text-center">
