@@ -60,7 +60,7 @@ function NavBar() {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '150px' }} navbarScroll>
-            <Nav.Link className="nav-link bold-links" href="{{ url_for('about') }}">
+            <Nav.Link className="nav-link bold-links" href="/about">
               About
             </Nav.Link>
             <Nav.Link className="nav-link bold-links" href="/tech">

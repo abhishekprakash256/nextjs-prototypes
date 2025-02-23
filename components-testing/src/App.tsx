@@ -4,6 +4,7 @@ import './App.css';  // check later
 import CustomBody from './components/CustomBody';
 import HeadingBar from './components/HeadingBar';
 import CardBundle from './components/CardBundle';
+import More from './components/More';
 
 
 
@@ -34,8 +35,13 @@ function App() {
       <HeadingBar title={title}/> 
       <CardBundle></CardBundle>
 
+      <More more_link={ more_link}/>
+     <HeadingBar title={title}/>
+     <CardBundle></CardBundle>
+
       
       </CustomBody>
+
       </>
 
   );
