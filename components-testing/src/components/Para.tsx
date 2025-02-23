@@ -11,7 +11,7 @@ const Para: React.FC<ParaProps> = ({ description }) => {
     <Container>
       <Row className="rounded background-color-body mt-3 p-2">
         <Col>
-          <p className="mb-1 mt-1 font-color-class bio-desc justified">
+          <p className="mb-1 mt-1 font-color-class bio-desc justify-content">
             {description}  {/* Renders plain text safely */}
           </p>
         </Col>
