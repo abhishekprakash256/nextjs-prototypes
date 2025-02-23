@@ -2,29 +2,34 @@
 
 
 .hover-effect-leetcode:hover {
-    content: url(leetcode-color.svg); /* Change the image source on hover */
+    border: 2px solid var(--social-media-color-border-hover);
+    background-color: var(--light-gray);
   }
   
   .hover-effect-kaggle:hover {
-    content: url(kaggle-color.svg); /* Change the image source on hover */
+    border: 2px solid var(--social-media-color-border-hover);
+    background-color: var(--light-gray);
   }
   
   .hover-effect-github:hover {
-    content: url(github.svg); /* Change the image source on hover */
+    border: 2px solid var(--social-media-color-border-hover);
+    background-color: var(--light-gray);
   }
   
   .hover-effect-linkedin:hover {
-    content: url(linkedin-color.svg); /* Change the image source on hover */
+    border: 2px solid var(--social-media-color-border-hover);
+    background-color: var(--light-gray);
   }
   
   .hover-effect-gitlab:hover {
-    content: url(gitlab-color.svg); /* Change the image source on hover */
+   /* content: url(gitlab-color.svg);  Change the image source on hover */
+   border: 2px solid var(--social-media-color-border-hover);
+   background-color: var(--light-gray);
   }
   
   .social-media{
     height: 40px;
   }
-
 
 
 .leetcode-icon
