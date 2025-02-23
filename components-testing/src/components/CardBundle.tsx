@@ -15,7 +15,7 @@ const CardBundle: React.FC = () => {
   const cardData: CardData[] = [
     {
       card_title: "Card Title 1",
-      card_para: "System design is a multidisciplinary field that encompasses various aspects of designi ",
+      card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems. ",
       img_src: "cards.jpg",  /* the image file is in the public folder */
       card_url: "https://example.com/card1", 
     },

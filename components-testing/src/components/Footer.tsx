@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <Container fluid className="footer-header-color">
+    <Container fluid className="footer-header-color ">
       <Form noValidate validated={validated} onSubmit={handleSubmit}>
         <Row id="contact" className="text-center">
           <Col className="text-center">

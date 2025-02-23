@@ -10,10 +10,7 @@ import Footer from './components/Footer';
 import Para from './components/Para';
 import SocialMediaLinks from './components/SocialMediaLinks';
 import ArticleImage from './components/ArticleImage';
-
-
-
-
+import SpaceBlock from './components/SpaceBlock';
 
 const title : string = "Tech";
 const more_link : string = "www.google.com";
@@ -74,6 +71,7 @@ function App() {
   medium_link=""
 />
 
+  <SpaceBlock></SpaceBlock>  { /*SpaceBlock component to create a space between the social media links and the footer */ }
 
       </CustomBody>
 
