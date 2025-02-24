@@ -1,5 +1,6 @@
 import Image from "next/image";
-import {CardTemp, NavBar, Footer,ArticleImage, SpaceBlock, SocialMediaLinks, Para, MarkDown, HeadingBar,CustomBody, CardBundle, More } from "front-end-component-kit";
+import {CardTemp, NavBar, Footer,ArticleImage, SpaceBlock, SocialMediaLinks, Para, MarkDown, HeadingBar,CustomBody, More } from "front-end-component-kit";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const more_link : string = "www.google.com";
@@ -17,12 +18,12 @@ const socialLinks = [
 ];
 const article_image : string = "chat-app-icon.png";
 
+import dynamic from "next/dynamic";
 
 
 
-
-
-
+import { CardBundle} from "front-end-component-kit";
+console.log(CardBundle);
 
 
 
@@ -37,8 +38,10 @@ export default function Home() {
 
 <CustomBody>
 
-<HeadingBar title={"Chat App"}/> 
 
+
+<HeadingBar title={"Chat App"}/> 
+    
    { <More more_link= {more_link} /> }
 
    
@@ -49,9 +52,9 @@ export default function Home() {
 
    <ArticleImage image_link= {article_image} />
 
-   <SocialMediaLinks
+   <SocialMediaLinks 
   github_link = {socialLinks[0]}
-  linkedin_link={socialLinks[1]}
+  linkedin_link= {socialLinks[1]}
   twitter_link=""
   leetcode_link={socialLinks[3]}
   gitlab_link={socialLinks[4]}
