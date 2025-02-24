@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {NavBar, Footer,ArticleImage, SpaceBlock, SocialMediaLinks, Para, MarkDown, HeadingBar,CustomBody, CardBundle, More } from "front-end-component-kit";
+import {CardTemp, NavBar, Footer,ArticleImage, SpaceBlock, SocialMediaLinks, Para, MarkDown, HeadingBar,CustomBody, CardBundle, More } from "front-end-component-kit";
 
 
 const more_link : string = "www.google.com";
@@ -40,6 +40,8 @@ export default function Home() {
 <HeadingBar title={"Chat App"}/> 
 
    { <More more_link= {more_link} /> }
+
+   
 
    
    <Para description={ description }/>
