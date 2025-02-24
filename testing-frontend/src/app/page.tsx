@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {ArticleImage, SpaceBlock, SocialMediaLinks, Para, MarkDown, HeadingBar,CustomBody, CardBundle, More } from "front-end-component-kit";
+import {NavBar, Footer,ArticleImage, SpaceBlock, SocialMediaLinks, Para, MarkDown, HeadingBar,CustomBody, CardBundle, More } from "front-end-component-kit";
 
 
 const more_link : string = "www.google.com";
@@ -30,7 +30,10 @@ const article_image : string = "chat-app-icon.png";
 
 export default function Home() {
   return (
-    <div className="container">
+    
+    <div>
+
+<NavBar></NavBar>
 
 <CustomBody>
 
@@ -58,6 +61,7 @@ export default function Home() {
 
 </CustomBody>
 
+    <Footer></Footer>
 
     </div>
   );
