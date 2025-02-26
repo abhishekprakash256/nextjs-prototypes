@@ -1,5 +1,5 @@
 
-import { CardsPaignation , NavBar, Footer,ArticleImage, SpaceBlock, SocialMediaLinks, Para, MarkDown, HeadingBar,CustomBody, More } from "front-end-component-kit";
+import { AboutPic, CardsPaignation , NavBar, Footer,ArticleImage, SpaceBlock, SocialMediaLinks, Para, MarkDown, HeadingBar,CustomBody, More } from "front-end-component-kit";
 
 import {CardLists} from "front-end-component-kit";
 
@@ -23,6 +23,8 @@ const socialLinks = [
   "https://medium.com/@yourprofile",
 ];
 const article_image : string = "chat-app-icon.png";
+
+const profile_pic : string = "profile-pic.jpg";
 
 
 const cardData = [
@@ -186,6 +188,104 @@ const Paignation_data = [
     card_url: "https://example.com/card2",
   },
 
+  {
+    card_title: "Card Title 1",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems. ",
+    img_src: "cards.jpg",  /* the image file is in the public folder */
+    card_url: "https://example.com/card1", 
+  },
+  {
+    card_title: "Card Title 2",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "federated-learning-flow.png", /* the image file is in the public folder */
+    card_url: "https://example.com/card2",
+  },
+  {
+    card_title: "Card Title 3",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "image_1.png",  /* the image file is in the public folder */
+    card_url: "https://example.com/card3",
+  },
+  {
+    card_title: "Card Title 4",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "image_1.png",
+    card_url: "https://example.com/card4",
+  },
+  {
+    card_title: "Card Title 2",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "federated-learning-flow.png", /* the image file is in the public folder */
+    card_url: "https://example.com/card2",
+  },
+  {
+    card_title: "Card Title 3",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "image_1.png",  /* the image file is in the public folder */
+    card_url: "https://example.com/card3",
+  },
+  {
+    card_title: "Card Title 4",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "image_1.png",
+    card_url: "https://example.com/card4",
+  },
+
+  {
+    card_title: "Card Title 4",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "image_1.png",
+    card_url: "https://example.com/card4",
+  },
+  {
+    card_title: "Card Title 2",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "federated-learning-flow.png", /* the image file is in the public folder */
+    card_url: "https://example.com/card2",
+  },
+  {
+    card_title: "Card Title 3",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "image_1.png",  /* the image file is in the public folder */
+    card_url: "https://example.com/card3",
+  },
+  {
+    card_title: "Card Title 4",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "image_1.png",
+    card_url: "https://example.com/card4",
+  },
+  {
+    card_title: "Card Title 1",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems. ",
+    img_src: "cards.jpg",  /* the image file is in the public folder */
+    card_url: "https://example.com/card1", 
+  },
+  {
+    card_title: "Card Title 2",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "federated-learning-flow.png", /* the image file is in the public folder */
+    card_url: "https://example.com/card2",
+  },
+  {
+    card_title: "Card Title 3",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "image_1.png",  /* the image file is in the public folder */
+    card_url: "https://example.com/card3",
+  },
+  {
+    card_title: "Card Title 4",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "image_1.png",
+    card_url: "https://example.com/card4",
+  },
+  {
+    card_title: "Card Title 2",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "federated-learning-flow.png", /* the image file is in the public folder */
+    card_url: "https://example.com/card2",
+  },
+
 ];
 
 
@@ -203,21 +303,42 @@ export default function Home() {
 
 
 
-<HeadingBar title={"Chat App"}/> 
+<HeadingBar title={"Abhi's Microcosm"}/> 
 
-<CardLists cardData={cardData2} />
+<AboutPic image_link={profile_pic} />
+
+<SocialMediaLinks 
+  github_link = {socialLinks[0]}
+  linkedin_link= {socialLinks[1]}
+  twitter_link=""
+  leetcode_link={socialLinks[3]}
+  gitlab_link={socialLinks[4]}
+  kaggle_link={socialLinks[5]}
+  medium_link=""
+/>
+
+<Para description={ description }/>
+
+<HeadingBar title={"Tech"}/> 
+
+<CardsPaignation cardData={cardData2} />
      
     <More more_link= {more_link} /> 
 
-   
-   
-   <Para description={ description }/>
-
-   <HeadingBar title={"Cards"}/> 
+  
+   <HeadingBar title={"Projects"}/> 
 
    <CardsPaignation cardData={Paignation_data} />
+   <SocialMediaLinks 
+  github_link = {socialLinks[0]}
+  linkedin_link= {socialLinks[1]}
+  twitter_link=""
+  leetcode_link={socialLinks[3]}
+  gitlab_link={socialLinks[4]}
+  kaggle_link={socialLinks[5]}
+  medium_link=""
+/>
 
- 
 
    <MarkDown mark_down_data={mark_down_data}/>
 
