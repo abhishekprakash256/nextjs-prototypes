@@ -1,5 +1,11 @@
-import Image from "next/image";
-import {CardTemp, NavBar, Footer,ArticleImage, SpaceBlock, SocialMediaLinks, Para, MarkDown, HeadingBar,CustomBody, More } from "front-end-component-kit";
+
+import {NavBar, Footer,ArticleImage, SpaceBlock, SocialMediaLinks, Para, MarkDown, HeadingBar,CustomBody, More } from "front-end-component-kit";
+
+import {CardLists} from "front-end-component-kit";
+
+
+
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -18,12 +24,68 @@ const socialLinks = [
 ];
 const article_image : string = "chat-app-icon.png";
 
-import dynamic from "next/dynamic";
+
+const cardData = [
+  {
+    card_title: "Card Title 1",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems. ",
+    img_src: "cards.jpg",  /* the image file is in the public folder */
+    card_url: "https://example.com/card1", 
+  },
+  {
+    card_title: "Card Title 2",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "federated-learning-flow.png", /* the image file is in the public folder */
+    card_url: "https://example.com/card2",
+  },
+  {
+    card_title: "Card Title 3",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "image_1.png",  /* the image file is in the public folder */
+    card_url: "https://example.com/card3",
+  },
+  {
+    card_title: "Card Title 4",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "image_1.png",
+    card_url: "https://example.com/card4",
+  },
+  {
+    card_title: "Card Title 2",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "federated-learning-flow.png", /* the image file is in the public folder */
+    card_url: "https://example.com/card2",
+  },
+  {
+    card_title: "Card Title 3",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "image_1.png",  /* the image file is in the public folder */
+    card_url: "https://example.com/card3",
+  },
+  {
+    card_title: "Card Title 4",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "image_1.png",
+    card_url: "https://example.com/card4",
+  },
+];
 
 
+const cardData2 = [  
+  {
+    card_title: "Card Title 3",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "image_1.png",  /* the image file is in the public folder */
+    card_url: "https://example.com/card3",
+  },
+  {
+    card_title: "Card Title 4",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "image_1.png",
+    card_url: "https://example.com/card4",
+  },
+]
 
-import { CardBundle} from "front-end-component-kit";
-console.log(CardBundle);
 
 
 
@@ -41,16 +103,18 @@ export default function Home() {
 
 
 <HeadingBar title={"Chat App"}/> 
-    
-   { <More more_link= {more_link} /> }
+
+<CardLists cardData={cardData2} />
+     
+    <More more_link= {more_link} /> 
 
    
-
    
    <Para description={ description }/>
    <MarkDown mark_down_data={mark_down_data}/>
 
    <ArticleImage image_link= {article_image} />
+   <CardLists cardData={cardData} />
 
    <SocialMediaLinks 
   github_link = {socialLinks[0]}
