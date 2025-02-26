@@ -1,5 +1,5 @@
 
-import {NavBar, Footer,ArticleImage, SpaceBlock, SocialMediaLinks, Para, MarkDown, HeadingBar,CustomBody, More } from "front-end-component-kit";
+import { CardsPaignation , NavBar, Footer,ArticleImage, SpaceBlock, SocialMediaLinks, Para, MarkDown, HeadingBar,CustomBody, More } from "front-end-component-kit";
 
 import {CardLists} from "front-end-component-kit";
 
@@ -87,6 +87,107 @@ const cardData2 = [
 ]
 
 
+const Paignation_data = [
+  {
+    card_title: "Card Title 1",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems. ",
+    img_src: "cards.jpg",  /* the image file is in the public folder */
+    card_url: "https://example.com/card1", 
+  },
+  {
+    card_title: "Card Title 2",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "federated-learning-flow.png", /* the image file is in the public folder */
+    card_url: "https://example.com/card2",
+  },
+  {
+    card_title: "Card Title 3",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "image_1.png",  /* the image file is in the public folder */
+    card_url: "https://example.com/card3",
+  },
+  {
+    card_title: "Card Title 4",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "image_1.png",
+    card_url: "https://example.com/card4",
+  },
+  {
+    card_title: "Card Title 2",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "federated-learning-flow.png", /* the image file is in the public folder */
+    card_url: "https://example.com/card2",
+  },
+  {
+    card_title: "Card Title 3",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "image_1.png",  /* the image file is in the public folder */
+    card_url: "https://example.com/card3",
+  },
+  {
+    card_title: "Card Title 4",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "image_1.png",
+    card_url: "https://example.com/card4",
+  },
+
+  {
+    card_title: "Card Title 4",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "image_1.png",
+    card_url: "https://example.com/card4",
+  },
+  {
+    card_title: "Card Title 2",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "federated-learning-flow.png", /* the image file is in the public folder */
+    card_url: "https://example.com/card2",
+  },
+  {
+    card_title: "Card Title 3",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "image_1.png",  /* the image file is in the public folder */
+    card_url: "https://example.com/card3",
+  },
+  {
+    card_title: "Card Title 4",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "image_1.png",
+    card_url: "https://example.com/card4",
+  },
+  {
+    card_title: "Card Title 1",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems. ",
+    img_src: "cards.jpg",  /* the image file is in the public folder */
+    card_url: "https://example.com/card1", 
+  },
+  {
+    card_title: "Card Title 2",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "federated-learning-flow.png", /* the image file is in the public folder */
+    card_url: "https://example.com/card2",
+  },
+  {
+    card_title: "Card Title 3",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "image_1.png",  /* the image file is in the public folder */
+    card_url: "https://example.com/card3",
+  },
+  {
+    card_title: "Card Title 4",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "image_1.png",
+    card_url: "https://example.com/card4",
+  },
+  {
+    card_title: "Card Title 2",
+    card_para: "System design is a multidisciplinary field that encompasses various aspects of designing distributed systems.",
+    img_src: "federated-learning-flow.png", /* the image file is in the public folder */
+    card_url: "https://example.com/card2",
+  },
+
+];
+
 
 
 
@@ -111,6 +212,13 @@ export default function Home() {
    
    
    <Para description={ description }/>
+
+   <HeadingBar title={"Cards"}/> 
+
+   <CardsPaignation cardData={Paignation_data} />
+
+ 
+
    <MarkDown mark_down_data={mark_down_data}/>
 
    <ArticleImage image_link= {article_image} />
